@@ -1,0 +1,8 @@
+version: "3.7"
+
+services:
+  context:
+    image: andreiborisov/witiko-markdown-issue-402:3.4.1
+    volumes:
+      - ./compile:/home/context:delegated
+    command: context --result=output --batchmode index.tex
